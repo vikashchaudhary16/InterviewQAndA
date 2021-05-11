@@ -15,7 +15,7 @@
     }
     
     .topnav a {
-      float: left;
+      /*float: left;*/
       color: #f2f2f2;
       text-align: center;
       padding: 14px 16px;
@@ -75,7 +75,7 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: #333;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -85,10 +85,11 @@
   background-color: #444;
 }
 
+/*
 #main {
   transition: margin-left .5s;
   padding: 16px;
-}
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -98,11 +99,10 @@
 </style>
 </head>
 <body>
+    <div id="main" >
   <h1>Interview Question.</h1>
-  <div id="main" class="topnav">
-        <div>
-  <button class="openbtn" onclick="openNav()">☰</button>
-</div>
+  <div class="topnav">
+        <button class="openbtn" onclick="openNav()">☰</button>
         <a class="active" href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
@@ -114,7 +114,7 @@
   <a href="#">Clients</a>
   <a href="#">Contact</a>
 </div>
-
+</div>
 <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
