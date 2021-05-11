@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body {
       margin: 0;
@@ -11,7 +12,7 @@
     
     .topnav {
       overflow: hidden;
-      background-color: #333;
+      background-color:rgb(111, 44, 145);
     }
     
     .topnav a {
@@ -45,17 +46,16 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color:gray;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 15px;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -75,14 +75,14 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #333;
+  background-color: rgb(111, 44, 145);
   color: white;
   padding: 10px 15px;
   border: none;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: rgb(111, 44, 145);
 }
 
 /*
@@ -100,25 +100,42 @@
 </head>
 <body>
     <div id="main" >
-  <h1>Interview Question.</h1>
-  <div class="topnav">
+      <div class="topnav">
         <button class="openbtn" onclick="openNav()">☰</button>
-        <a class="active" href="index.html">Home</a>
+       <label style="color: white;">Interview Question</label>
+       <!-- <a class="active" href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
+        -->
       </div>
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-</div>
+      <div id="mySidebar" class="sidebar">
+        <!--<a href="javascript:void(0)" class="openbtn" onclick="closeNav()">×</a>-->
+        <div style="margin-top: 0px; background-color:black;;color: white;text-align: center;padding: 14px 16px;">
+          <label style="color: white;text-align: center;">Interview Question</label>
+        </div>
+        <div>
+          <a href="index.html"><i class="fa fa-home"></i> Home</a>
+          <a href="Technologies.html">Technologies</a>
+          <a href="Contact.html">Contact</a>
+          <a href="About.html">About</a>
+        </div>
+    </div>
+    <h2>Most Asked Interview Questions</h2>
+  </div>
 <script>
 function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  var mySidebarWidth=document.getElementById("mySidebar").style.width;
+  mySidebarWidth=mySidebarWidth.replace('px','');
+
+  if(mySidebarWidth > 0)
+  {
+    closeNav();
+  }
+  else
+  {
+    document.getElementById("mySidebar").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "200px";
+  }
 }
 
 function closeNav() {
