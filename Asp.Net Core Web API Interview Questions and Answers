@@ -1,0 +1,47 @@
+Q. 1 What is a Web API?
+Ans: It is a framework that helps us to build or deploy the services of HTTP.
+
+Q. 2 Next, it is critical of anyone to think and the following question is quite popular in the list of web API interview questions and answers for experienced in .net. Why actually should a Web API be used?
+Ans: It is a known fact that if you are going to develop RESTful services by approaching WCF technique, then you have got to do a lot of work such as keeping a close eye on config settings or URI templates. Web API stands as another means where you can increase Test Data Driven related ways for developing RESTful services.
+
+Q. 3 Is it wise to use Web API? If so, why?
+Ans: Non-soap based and simplicity are two features that come packed when this is used to create HTTP services. Apart from it, devices that are having limited bandwidths are more benefited as it is lighter in architecture.
+
+Q. 4 What are the advantages that you could speak about Web API?
+Ans: Content Negotiation, routing, and model bindings are some of the top picks that one could say when it comes to the advantages of Web API.
+
+Q. 5 Should the Web API be seen as a replacement to any of the existing ones such as WCF?
+Ans: One shall strictly understand that Web API just provided an alternate approach for building non-SOAP based services such as JSON string. Thus, it's completely false to claim that its a replacement to any and that includes WCF.
+
+Q. 6 Which protocol does the Web API support?
+Ans: HTTP is the protocol that the Web API supports.
+
+Q. 7 What is the minimum version of the .NET framework that could be expected to support Web API?
+Ans: The .NET version has to be minimum 4.0 to support this API.
+
+Q. 8 Which are all the main return types that the Web API can provide support?
+Ans: Void, HttpResponseMessage, IHttpActionResult and serialized return values are the ones that are supported.
+
+Q. 9 What is the open source library of Json that Web API uses for serialization?
+Ans:Json.NET is the library that is used for JSON serialization.
+
+Q. 10 What is the status code sent along with HTTP response to indicate the uncaught exceptions?
+Ans: The status code is 500 - Internal Server error.
+
+Q. 11 What is meant by Web API routing?
+Ans: It is a pattern matching routine that is similar to what is found in MVC architecture. Route Tables contain all the routes that have been registered.
+
+Q. 12 Web API interview questions always lay emphasis on what is meant by SOAP services?
+Ans: It is one of the messaging formats that is used as a protocol means for exchanging information generally through channels like JMS or HTTP. The standard format consists of an XML-based format.
+
+Q. 13 What are the steps that have to be followed to use web api with .NET web form?
+Ans:
+
+First, we need to create Web API controller.
+Routing table will then need to be added to the Global. sax method.
+Perform a jQuery ajax call to the Web API and get the valuable data.
+Q. 14 Is it possible to use Web API with ASP.NET web form?
+Ans: ASP.NET MVC framework comes bundled with a web form and thus, you could straightaway conclude that yes, it is possible.
+
+Q. 15 Briefly mention about exception filters?
+Ans: Exceptions that are thrown but are not handled will lead to the execution of exception filters. IExceptionFilter interface is implemented by the exception filters.
